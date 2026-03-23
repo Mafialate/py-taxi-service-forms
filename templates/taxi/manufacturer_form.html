@@ -7,6 +7,6 @@
     {% csrf_token %}
     {{ form|crispy }}
     <input type="submit" value="Submit" class="btn btn-success">
-    <a href="{{ request.GET.next|default:'/'}}" class="btn btn-primary">Cancel</a>
+    <a href="{{ request.GET.next|default:'/' }}" class="btn btn-primary">Cancel</a>
   </form>
 {% endblock %}
